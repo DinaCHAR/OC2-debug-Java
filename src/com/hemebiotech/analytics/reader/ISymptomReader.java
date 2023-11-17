@@ -1,6 +1,7 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.analytics.reader;
 
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Anything that will read symptom data from a source
@@ -16,7 +17,13 @@ public interface ISymptomReader {
 	 * 
 	 * @return a raw listing of all Symptoms obtained from a data source, duplicates are possible/probable
 	 */
+		
+	//quelque chose que ne faut pas faire à voir le 'G' était en maj
+	//List<String> getSymptoms ();
 	
-	//quelque chose que ne faut pas faire à voir
-	List<String> GetSymptoms ();
+	void getSymptoms ();
+	
+	void sortSymptoms();
+	
+	List<String> getLineReaded();
 }
