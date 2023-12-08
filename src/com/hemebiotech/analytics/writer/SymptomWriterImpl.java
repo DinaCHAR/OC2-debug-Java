@@ -15,7 +15,9 @@ import java.util.Map;
  * La méthode resetWriter est responsable de la création d'un nouveau BufferedWriter pour le fichier de sortie donné.
  * Elle gère les exceptions IO en affichant la trace de la pile si une exception se produit.
  * 
- * La méthode writeSymptoms accepte une carte de symptômes et leur nombre. Si la carte d'entrée n'est pas vide ou nulle,la méthode réinitialise l'auteur et parcourt les entrées de la carte, en écrivant chaque symptôme et son nombre dans le fichier de sortie. Si la carte est vide ou nulle, un message par défaut "aucun symptôme trouvé" est écrit dans le fichier.
+ * La méthode writeSymptoms accepte une carte de symptômes et leur nombre. Si la carte d'entrée n'est pas vide ou nulle,
+ * la méthode réinitialise l'auteur et parcourt les entrées de la carte, en écrivant chaque symptôme et son nombre dans le fichier de sortie. 
+ * Si la carte est vide ou nulle, un message par défaut "aucun symptôme trouvé" est écrit dans le fichier.
  * Le BufferedWriter est nettoyé pour s'assurer que toutes les données ont été écrites, et l'auteur est fermé dans le bloc final.
  * La gestion des exceptions est implémentée afin d'attraper et d'afficher toute exception IOException pouvant survenir pendant les opérations de fichier.
  */
