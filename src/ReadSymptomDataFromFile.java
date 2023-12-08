@@ -1,9 +1,11 @@
 /*
 *Gestion des ressources :
-*Il est important de fermer les ressources correctement afin d'éviter les fuites de ressources potentielles. Vous avez déjà fermé le BufferedReader dans le bloc finally, mais pensez à utiliser l'instruction try-with-resources pour le fermer automatiquement.
+*Il est important de fermer les ressources correctement afin d'éviter les fuites de ressources potentielles. 
+* le BufferedReader est déjà fermer dans le bloc finally, 
+*mais il faut penser à utiliser l'instruction try-with-resources pour le fermer automatiquement.
 
 *Gestion des exceptions :
-*Bien que vous attrapiez et imprimiez l'exception (IOException e.printStackTrace() ;), il pourrait être plus approprié d'enregistrer l'exception ou de lancer une exception personnalisée pour indiquer un problème avec la lecture du fichier.
+*Bien que nous imprimons l'exception (IOException e.printStackTrace() ;), il pourrait être plus approprié d'enregistrer l'exception ou de lancer une exception personnalisée pour indiquer un problème avec la lecture du fichier.
 
 *Validation du chemin d'accès au fichier :
 *Il pourrait être utile d'ajouter une validation du chemin d'accès au fichier pour s'assurer qu'il ne s'agit pas d'une chaîne vide ou d'une valeur nulle avant d'essayer de lire le fichier.
