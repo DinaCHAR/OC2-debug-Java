@@ -91,6 +91,8 @@ public class SymptomWriterImpl implements ISymptomWriter {
         /*@exception IOException
          * Une gestion appropriée des exceptions est implémentée tout au long du processus afin d'attraper 
          * et d'afficher toutes les exceptions IO qui peuvent survenir pendant les opérations sur les fichiers.
+         * 
+         * Type 
          */
         catch (IOException e) { 
             e.printStackTrace(); 

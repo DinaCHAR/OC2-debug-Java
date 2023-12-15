@@ -62,7 +62,8 @@ public class SymptomReaderImpl implements ISymptomReader {
 	
 	/*
 	 * Réinitialise le BufferedReader avec un nouveau FileReader pour le chemin d'accès au fichier spécifié.
-	 * Gère l'exception FileNotFound en affichant la trace de la pile.(stack trace représente la pile d'appel du programme au moment où l'exception a été générée)
+	 * Gère l'exception FileNotFound en affichant la trace de la pile.
+	 * (stack trace représente la pile d'appel du programme au moment où l'exception a été générée)
 	 */
 	private void resetReader() {
 		try {

@@ -1,15 +1,19 @@
 /*
 *Incohérence des noms de variables :
-    Les noms des variables utilisées pour compter les symptômes ne sont pas cohérents (headCount vs headacheCount). Il est conseillé de conserver des noms de variables cohérents pour une meilleure lisibilité.
+    Les noms des variables utilisées pour compter les symptômes ne sont pas cohérents (headCount vs headacheCount). 
+    Il est conseillé de conserver des noms de variables cohérents pour une meilleure lisibilité.
 
     Faute de frappe dans la vérification du "rush" :
     Il y a une faute de frappe dans la condition de vérification des symptômes de "rush". Elle devrait être remplacée par "rash".
+    pour correspondre correctement à la condition de comptage des éruptions cutanées.
 
     Gestion des ressources du lecteur et du rédacteur de fichiers :
-    Il est important de fermer les ressources (BufferedReader et FileWriter) en utilisant l'instruction try-with-resources ou un bloc finally pour assurer une bonne gestion des ressources.
+    Il est important de fermer les ressources (BufferedReader et FileWriter) 
+    en utilisant l'instruction try-with-resources ou un bloc finally pour assurer une bonne gestion des ressources.
 
     Logique de comptage incorrecte :
-    La logique de comptage semble incorrecte. Elle incrémente les variables locales (headCount, rashCount, pupilCount), mais les variables statiques au niveau de la classe (headacheCount, rashCount, pupilCount) ne sont pas mises à jour. 
+    La logique de comptage semble incorrecte. Elle incrémente les variables locales (headCount, rashCount, pupilCount), 
+    mais les variables statiques au niveau de la classe (headacheCount, rashCount, pupilCount) ne sont pas mises à jour. 
     Cela peut conduire à des comptages incorrects.
     
     Le code ne prend en compte que 3 symptômes.

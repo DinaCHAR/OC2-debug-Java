@@ -19,6 +19,9 @@ public class AnalyticsCounter {
 	/**
      * Compte les occurrences des symptômes dans la liste fournie et renvoie un TreeMap avec les noms des symptômes comme clés
      * et leur nombre d'occurrences correspondant comme valeurs.
+     * 
+     * La méthode countSymptomsReaded traite ensuite une liste de symptômes (listToCount), 
+     * met à jour les comptes dans la carte countedSymptoms et renvoie la carte finale.
      *
      * @param listToCount La liste des symptômes à compter
      * @return Un TreeMap contenant les noms des symptômes comme clés et leur nombre d'occurrences comme valeurs

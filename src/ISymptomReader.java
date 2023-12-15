@@ -14,7 +14,8 @@ import java.util.List;
 
 
  /*
- *Le problème dans ce code est une incohérence dans le nom de la signature de la méthode. Le nom de la méthode doit suivre les conventions Java, qui utilisent la camelCase pour les noms de méthode. 
+ *Le problème dans ce code est une incohérence dans le nom de la signature de la méthode. 
+ *Le nom de la méthode doit suivre les conventions Java, qui utilisent la camelCase pour les noms de méthode. 
  *Dans l'interface, la méthode est nommée GetSymptoms(), mais elle devrait être getSymptoms().
  */
 

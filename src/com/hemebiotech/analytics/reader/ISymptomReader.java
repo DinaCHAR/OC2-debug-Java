@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 /*
  * Interface permettant de lire et de traiter les données relatives aux symptômes provenant d'une source externe.
- * Les classes qui implémentent cette interface sont censées fournir des fonctionnalités permettant d'obtenir, de trier et d'extraire des informations sur les symptômes, trier et récupérer des informations sur les symptômes.
+ * Les classes qui implémentent cette interface sont censées fournir des fonctionnalités permettant d'obtenir, 
+ * de trier et d'extraire des informations sur les symptômes, trier et récupérer des informations sur les symptômes.
  * 
  * La méthode getSymptoms est responsable de la récupération des données sur les symptômes à partir de la source externe.
  * Les implémentations de cette méthode peuvent impliquer la lecture d'un fichier, l'extraction de données d'une base de données,
