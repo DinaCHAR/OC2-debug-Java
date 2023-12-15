@@ -34,7 +34,7 @@ public class AnalyctisSymptomAnalyzer {
 		this.symptomReader = new SymptomReaderImpl(fileToRead);
 		this.symptomCounter = new AnalyticsCounter();
 		this.symptomWriter = new SymptomWriterImpl(outputFileName);
-		this.symptomsSortedAndCounted = new HashMap<String, Integer>();
+		this.symptomsSortedAndCounted = new HashMap<>();
 	}
 	
 	/**

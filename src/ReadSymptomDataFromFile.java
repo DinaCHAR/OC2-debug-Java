@@ -1,8 +1,8 @@
 /*
-*Gestion des ressources :
-*Il est important de fermer les ressources correctement afin d'éviter les fuites de ressources potentielles. 
-* le BufferedReader est déjà fermer dans le bloc finally, 
-*mais il faut penser à utiliser l'instruction try-with-resources pour le fermer automatiquement.
+	Gestion des ressources :
+	Il est important de fermer les ressources correctement afin d'éviter les fuites de ressources potentielles. 
+	le BufferedReader est déjà fermer dans le bloc finally, 
+	mais il faut penser à utiliser l'instruction try-with-resources pour le fermer automatiquement.
 
 *Gestion des exceptions :
 *Bien que nous imprimons l'exception (IOException e.printStackTrace() ;), il pourrait être plus approprié d'enregistrer l'exception ou de lancer une exception personnalisée pour indiquer un problème avec la lecture du fichier.

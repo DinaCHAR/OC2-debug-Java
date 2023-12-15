@@ -76,30 +76,32 @@ public class SymptomReaderImpl implements ISymptomReader {
 	/**
 	 * Lit les chaînes de symptômes dans le fichier et remplit la liste lineReaded.
 	 * Gère les exceptions IO et s'assure que le lecteur est fermé dans le bloc final.
+	 * s'assurer que le lecteur n'est pas nul avant de tenter de le fermer
 	 */
 	
 	@Override
 	public void getSymptoms() {
-		
-		if (filepath != null) {
-			try {
-				resetReader();
-				String line = reader.readLine();
-				
-				while (line != null) {
-					this.lineReaded.add(line);
-					line = reader.readLine();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			} finally {
-				try {
-				reader.close();
-				} catch (IOException e){
-					e.printStackTrace();
-				}
-			}
-		}
+	    if (filepath != null) {
+	        try {
+	            resetReader();
+	            String line = reader.readLine();
+
+	            while (line != null) {
+	                this.lineReaded.add(line);
+	                line = reader.readLine();
+	            }
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        } finally {
+	            try {
+	                if (reader != null) {
+	                    reader.close();
+	                }
+	            } catch (IOException e) {
+	                e.printStackTrace();
+	            }
+	        }
+	    }
 	}
 	
 	/**

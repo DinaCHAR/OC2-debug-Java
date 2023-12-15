@@ -11,6 +11,8 @@
     Logique de comptage incorrecte :
     La logique de comptage semble incorrecte. Elle incrémente les variables locales (headCount, rashCount, pupilCount), mais les variables statiques au niveau de la classe (headacheCount, rashCount, pupilCount) ne sont pas mises à jour. 
     Cela peut conduire à des comptages incorrects.
+    
+    Le code ne prend en compte que 3 symptômes.
  */
 
 

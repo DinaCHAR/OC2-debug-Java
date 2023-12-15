@@ -96,10 +96,11 @@ public class SymptomWriterImpl implements ISymptomWriter {
             e.printStackTrace(); 
         } 
         finally { 
-  
             try { 
             	//Toujours fermer le writer (check for null to avoid NullPointerException)
+            	if (writer != null) {
                 writer.close(); 
+            	}
             } 
             catch (Exception e) {
                 e.printStackTrace(); 

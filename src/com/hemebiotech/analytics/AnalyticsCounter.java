@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 //import java.io.FileOutputStream;
@@ -26,7 +27,7 @@ public class AnalyticsCounter {
 	public Map<String, Integer> countSymptomsReaded(List<String> listToCount){	    
 	    
 		// TreeMap pour stocker les symptômes et leur nombre d'occurrences dans un ordre trié.
-		TreeMap<String,Integer> countedSymptoms = new TreeMap<String, Integer>();
+		Map<String,Integer> countedSymptoms = new TreeMap<>();
 	    
 		// Interroger la liste des symptômes pour compter les occurrences
 		for(int currentLineFromFileIndex = 0; currentLineFromFileIndex < listToCount.size(); currentLineFromFileIndex++) {
