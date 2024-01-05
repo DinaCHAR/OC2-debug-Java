@@ -12,7 +12,7 @@ import Exceptions.FileNotYetReadedException;
 
 /**
  * La classe AnalyctisSymptomAnalyzer orchestre l'analyse des données relatives aux symptômes.
- * Elle utilise un ISymptomReader pour lire les symptômes à partir d'un fichier, un AnalyticsCounter pour trier et compter les symptômes, 
+ * Elle utilise un ISymptomReader pour lire les symptômes à partir d'un fichier, un AnalyticsCounter pour trier et compter les symptômes 
  * et un ISymptomWriter pour écrire les résultats dans un fichier de sortie.
  */
 
