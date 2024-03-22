@@ -12,6 +12,7 @@ import java.util.Map;
 * Les clés de la carte représentent les noms des symptômes et les valeurs correspondantes représentent les nombres d'occurrences.
 */
 
+//Si tu imlemente cette interface dans une class, alors cette class doit obligatoirement avoir une fonction qui s'appel wrtie symptome qui nenvoie rien et prenant en para une map de string integer
 public interface ISymptomWriter {
 	void writeSymptoms(Map<String, Integer> symptoms);
 }
